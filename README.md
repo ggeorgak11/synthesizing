@@ -1,7 +1,7 @@
 ## Synthesizing Training Data for Object Detection in Indoor Scenes.
 G. Georgakis, A. Mousavian, A. C. Berg, J. Kosecka, RSS 2017
 
-This is code used to generate the synthetic sets for the paper. Set-up to work for kitchen scenes and generates both a blended and a simple superimposed dataset.
+This is MATLAB code used to generate the synthetic sets for the paper. Set-up to work for kitchen scenes and generates both a blended and a simple superimposed dataset.
 
 [Project Page](https://cs.gmu.edu/~robot/synthesizing.html)
 
@@ -28,25 +28,8 @@ DATASETS NEEDED:
 	-- Use the semantic segmentation approach of "Joint Semantic Segmentation and Depth Estimation with Deep Convolutional Networks" to produce 	  segmentations for each frame, and save the files ending in '_seg.mat'. The files should be save the in the same folder as the color and depth images. If you choose to use your own segmentation approach, then make sure to change the useful labels (params.usf_lbls) in the init_params.m. The useful labels should contain categories such as tables, desks, counters etc.
 
 
-FOLDER STRUCTURE (if the following structure is kept, then only the root path needs to changed in the init_params.m):
-----------------
--root:
-	--src
-		---utils
-	--background_scenes
-		---kitchens
-	--object_data
-		---objects
-		---our_objects_masks
-		---our_dataset_objects (file)
-	--ModifiedPoisson
-	--support_surface
-	--toolbox_nyu_depth_v2
-	--Synthetic Sets (folder to save generated synthetic sets)
-
-
 RUNNING THE CODE:
 -----------------
-	The main script is the create_synth_set.m. 
-	All parameters can be found in the init_params.m. 
-	The script saves both the annotation in xml format ready to be used for (SSD, Faster R-CNN) and in mat files.
+The main script is the create_synth_set.m. 
+All parameters can be found in the init_params.m. 
+The script saves both the annotation in xml format ready to be used for (SSD, Faster R-CNN) and in mat files.

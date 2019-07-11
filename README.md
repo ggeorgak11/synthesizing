@@ -18,10 +18,20 @@ This is MATLAB code used to generate the synthetic sets for the paper. Set-up to
 2) Refined masks for all objects from the BigBird dataset. Please download from the project page (synthesizing_project.zip). They can be found in object_data/our_objects_masks/. A few of the masks for which the graphCut could not produce a good segmentation are not included, so have that in mind when reading through the files.
 
 3) NYU background set: a) Download kitchen raw sets from http://cs.nyu.edu/~silberman/datasets/nyu_depth_v2.html . 
-Note that you can download an example scene from the project page (synthesizing_project.zip) that can be found in folder background_scenes/kitchens/. This is already preprocessed with the nyu toolbox and includes the semantic segmentations. b) The rest of the scenes can be downloaded from the project page under 'Data'. c) Use utils/nyu_preprocess.m to process each video scene (synchronization, alignment, depth filling). d) Use the semantic segmentation approach of "Joint Semantic Segmentation and Depth Estimation with Deep Convolutional Networks" to produce segmentations for each frame, and save the files ending in '_seg.mat'. The files should be save the in the same folder as the color and depth images. If you choose to use your own segmentation approach, then make sure to change the useful labels (params.usf_lbls) in the init_params.m. The useful labels should contain categories such as tables, desks, counters etc.
+Note that you can download an example scene from the project page (synthesizing_project.zip) that can be found in folder background_scenes/kitchens/. This is already preprocessed with the nyu toolbox and includes the semantic segmentations. b) The rest of the scenes can be downloaded from the project page under 'Data'. c) Use utils/nyu_preprocess.m to process each video scene (synchronization, alignment, depth filling). d) Use the semantic segmentation approach of "Joint Semantic Segmentation and Depth Estimation with Deep Convolutional Networks" to produce segmentations for each frame, and save the files ending in '_seg.mat'. The files should be saved in the same folder as the color and depth images. If you choose to use your own segmentation approach, then make sure to change the useful labels (params.usf_lbls) in the init_params.m. The useful labels should contain categories such as tables, desks, counters etc.
 
-Running the code
------------------
+### Running the code
 The main script is the create_synth_set.m. 
 All parameters can be found in the init_params.m. 
 The script saves both the annotation in xml format ready to be used for (SSD, Faster R-CNN) and in mat files.
+
+### Citation
+If you use this code for your research, please consider citing:
+```
+@article{georgakis2017synthesizing,
+  title={Synthesizing training data for object detection in indoor scenes},
+  author={Georgakis, Georgios and Mousavian, Arsalan and Berg, Alexander C and Kosecka, Jana},
+  journal={Robotics: Science and Systems (RSS)},
+  year={2017}
+}
+```

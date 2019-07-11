@@ -5,16 +5,16 @@ This is MATLAB code used to generate the synthetic sets for the paper. Set-up to
 
 [Project Page](https://cs.gmu.edu/~robot/synthesizing.html)
 
-EXTERNAL DEPENDENCY:
+External dependencies
 ----------------------
 1) Modified Poisson (can be found in this link: https://www.mathworks.com/matlabcentral/fileexchange/39438-fast-seamless-image-cloning-by-modified-poisson-equation)
 2) toolbox_nyu_depth_v2. Can be found in this link: http://cs.nyu.edu/~silberman/datasets/nyu_depth_v2.html
 
-OPTIONAL DEPENDENCIES:
+Optional Dependencies
 --------------------
 1) Semantic segmentation approach of "Joint Semantic Segmentation and Depth Estimation with Deep Convolutional Networks" or any other semantic segmentation approach that produces labels for indoor scenes. This is needed if you want to use background scenes other than the ones provided on the project webpage.  
 
-DATASETS NEEDED:
+Datasets needed
 ----------------
 1) BigBird
 	-- Download the objects you want to use from: http://rll.berkeley.edu/bigbird/ .
@@ -27,7 +27,7 @@ DATASETS NEEDED:
 	-- Use utils/nyu_preprocess.m to process each video scene (synchronization, alignment, depth filling).
 	-- Use the semantic segmentation approach of "Joint Semantic Segmentation and Depth Estimation with Deep Convolutional Networks" to produce 	  segmentations for each frame, and save the files ending in '_seg.mat'. The files should be save the in the same folder as the color and depth images. If you choose to use your own segmentation approach, then make sure to change the useful labels (params.usf_lbls) in the init_params.m. The useful labels should contain categories such as tables, desks, counters etc.
 
-Running the code:
+Running the code
 -----------------
 The main script is the create_synth_set.m. 
 All parameters can be found in the init_params.m. 

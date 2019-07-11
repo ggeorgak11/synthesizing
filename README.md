@@ -15,9 +15,7 @@ This is MATLAB code used to generate the synthetic sets for the paper. Set-up to
 1) Semantic segmentation approach of "Joint Semantic Segmentation and Depth Estimation with Deep Convolutional Networks" or any other semantic segmentation approach that produces labels for indoor scenes. This is needed if you want to use background scenes other than the ones provided on the project webpage.  
 
 ### Datasets needed
-----------------
 1) BigBird
-
 a) Download the objects you want to use from: http://rll.berkeley.edu/bigbird/ .
 
 b) Place all of them in the folder object_data/objects/.

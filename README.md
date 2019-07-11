@@ -27,8 +27,7 @@ DATASETS NEEDED:
 	-- Use utils/nyu_preprocess.m to process each video scene (synchronization, alignment, depth filling).
 	-- Use the semantic segmentation approach of "Joint Semantic Segmentation and Depth Estimation with Deep Convolutional Networks" to produce 	  segmentations for each frame, and save the files ending in '_seg.mat'. The files should be save the in the same folder as the color and depth images. If you choose to use your own segmentation approach, then make sure to change the useful labels (params.usf_lbls) in the init_params.m. The useful labels should contain categories such as tables, desks, counters etc.
 
-
-RUNNING THE CODE:
+Running the code:
 -----------------
 The main script is the create_synth_set.m. 
 All parameters can be found in the init_params.m. 

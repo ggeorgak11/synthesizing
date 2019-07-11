@@ -17,7 +17,7 @@ Optional Dependencies
 Datasets needed
 ----------------
 1) BigBird
--- Download the objects you want to use from: http://rll.berkeley.edu/bigbird/ .
+a) Download the objects you want to use from: http://rll.berkeley.edu/bigbird/ .
 
 -- Place all of them in the folder object_data/objects/.
 

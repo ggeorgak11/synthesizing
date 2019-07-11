@@ -18,7 +18,9 @@ Datasets needed
 ----------------
 1) BigBird
 -- Download the objects you want to use from: http://rll.berkeley.edu/bigbird/ .
+
 -- Place all of them in the folder object_data/objects/.
+
 -- Create a txt file that contains a list of the used objects (object_data/our_dataset_objects, we provide an example).
 2) Refined masks for all objects from the BigBird dataset. Provided in object_data/our_objects_masks/. A few of the masks for which the graphCut could not produce a good segmentation are not included, so have that in mind when reading through the files.
 3) NYU background set. 

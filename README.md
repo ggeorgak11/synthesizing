@@ -6,16 +6,14 @@ This is MATLAB code used to generate the synthetic sets for the paper. Set-up to
 [Project Page](https://cs.gmu.edu/~robot/synthesizing.html)
 
 ### External dependencies
-----------------------
 1) Modified Poisson (can be found in this link: https://www.mathworks.com/matlabcentral/fileexchange/39438-fast-seamless-image-cloning-by-modified-poisson-equation)
 2) toolbox_nyu_depth_v2. Can be found in this link: http://cs.nyu.edu/~silberman/datasets/nyu_depth_v2.html
 
 ### Optional Dependencies
---------------------
 1) Semantic segmentation approach of "Joint Semantic Segmentation and Depth Estimation with Deep Convolutional Networks" or any other semantic segmentation approach that produces labels for indoor scenes. This is needed if you want to use background scenes other than the ones provided on the project webpage.  
 
 ### Datasets needed
-1) BigBird
+1) BigBird \\
 a) Download the objects you want to use from: http://rll.berkeley.edu/bigbird/ .
 
 b) Place all of them in the folder object_data/objects/.
